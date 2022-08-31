@@ -84,7 +84,7 @@ span {
     flex: 0 1 48%;
 }
 .flex-25 {
-    flex: 0 1 23%;
+    flex: 0 1 29%;
 }
 .flex-70 {
     flex: 0 1 65%;
@@ -99,7 +99,7 @@ span {
     right: 0;
     bottom: 0;
     filter: brightness(50%);
-    opacity: 0.8;
+    opacity: 0.7;
 }
 .header-menu {
     position: absolute;
@@ -194,12 +194,17 @@ h4 {
 /* --------------------- */
 .flex-25 p{
     margin-left: 24px;
+    font-size: 21px;
+}
+.flex-25 img {
+    width: 12%;
 }
 .flex-25 div {
-    margin: 24px -4px;
+    margin: 2px -4px;
+    margin-bottom: 32px;
     /* border: 1px solid; */
     box-shadow: 0px 0px 12px 1px #888888;
-    padding: 10px 6px;
+    padding: 18px 12px;
     display: flex;
     justify-content:stretch;
 }
@@ -271,18 +276,26 @@ ion-icon {
 /* ------------------------ */
 .map {
     position: relative;
-    bottom: 0;
 }
 input , textarea {
     width: 100%;
-    padding: 12px;
-    margin: 12px 0;
+    padding: 6px;
+    margin: 10px 0;
 }
 .flex-50 {
     flex: 0 1 50%;
     background: linear-gradient(rgba(0,0,0,0.1) , rgba(0,0,0,0.1)), url(./assets/schedule-bg.jpg) 50% 50%;
-    position: inherit;
-    top: 50%;
-    right: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
     left: 50%;
+}
+form {
+    padding: 24px;
+}
+.form-radius {
+    padding: -18px;
+    margin: 42px;
+    background-color: #fff;
 }
