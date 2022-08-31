@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-        <video autoplay loop class="myvideo" type="video/mp4" src="./assets/gym-video.mp4"></video>
+        <video autoplay muted loop class="myvideo" type="video/mp4" src="./assets/gym-video.mp4"></video>
         <div class="header-menu">
             <div class="container flex ">
             <h1>TRAINING <span>STUDIO</span></h1>
@@ -106,7 +106,7 @@
         </div>
         <section class="flex container flex-start">
             <article class="flex-25">
-                <div class="flex container ">
+                <div class="flex container">
                     <img src="./assets/tabs-first-icon.png" alt="">
                     <p>First Training Class</p>
                 </div>
@@ -218,20 +218,22 @@
         </section>
         <section>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.3116955259234!2d-43.3852963!3d-23.012325000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdb695cd967b7%3A0x171cdd035a6a9d84!2sAv.%20L%C3%BAcio%20Costa%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%20Brazil!5e0!3m2!1sen!2sin!4v1661253785472!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.3116955259234!2d-43.3852963!3d-23.012325000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdb695cd967b7%3A0x171cdd035a6a9d84!2sAv.%20L%C3%BAcio%20Costa%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%20Brazil!5e0!3m2!1sen!2sin!4v1661253785472!5m2!1sen!2sin" width="50%" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="flex-50">
-                <form action="">
-                    <nav>
-                        <input type="text" placeholder="Your Name">
-                        <input type="text" placeholder="Your Email">
-                    </nav>
-                    <input type="text" placeholder="Subject">
-                    <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
-                    <button class="btn">SEND MESSAGE</button>
-                </form>
+                <div class="form-radius">
+                    <form action="">
+                        <nav class="flex">
+                            <input type="text" class="flex-48" placeholder="Your Name" required>
+                            <input type="text" class="flex-48" placeholder="Your Email" required>
+                        </nav>
+                        <input type="text" placeholder="Subject">
+                        <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+                        <button class="btn">SEND MESSAGE</button>
+                    </form>
+                </div>
+                
             </div>
-
+            </div>
         </section>
     </main>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
